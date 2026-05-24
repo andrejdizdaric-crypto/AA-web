@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7 Monate mit dir ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7, #ff758c);
+      overflow-x: hidden;
+      color: #fff;
+      position: relative;
+    }
+
+
+
+    /* Hintergrund mit Andi & Amy */
+    body::before {
+      content: "Andi ❤️ Amy   Andi ❤️ Amy   Andi ❤️ Amy   Andi ❤️ Amy";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 3rem;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transform: rotate(-20deg);
+      pointer-events: none;
+      z-index: 0;
+      line-height: 1.8;
+      white-space: pre-wrap;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .timeline {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 25px;
+      padding: 30px;
+      margin: 30px 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    .dates {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.8;
+    }
+
+    .arrow {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+
+    .months {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .love-text {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(12px);
+      border-radius: 25px;
+      padding: 35px;
+      margin: 30px 0;
+      line-height: 1.9;
+      font-size: 1.15rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    .button {
+      display: inline-block;
+      margin: 12px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      background: #ffffff;
+      color: #e91e63;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .button:hover {
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      opacity: 0.95;
+    }
+
+    /* Herz-Animation */
+    .heart {
+      position: fixed;
+      font-size: 24px;
+      animation: floatUp 4s linear forwards;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-600px) scale(2);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .dates {
+        font-size: 1.2rem;
+      }
+
+      .love-text {
+        font-size: 1rem;
+        padding: 25px;
+      }
+
+      .button {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 12px auto;
+      }
+
+
+
+
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>7 Monate mit dir ❤️</h1>
+  <p class="subtitle">Für meine Amina – meine Amy 🌹</p>
+
+  <div class="timeline">
+    <div class="dates">
+      20.10.2025
+      <div class="arrow">⬇️ ❤️ ⬇️</div>
+      <span id="heute"></span>
+    </div>
+    <div class="months" id="monate"></div>
+  </div>
+
+  <div class="love-text">
+    Liebe Amina,<br><br>
+
+    schon 7 Monate ist es her, als ich dir diese eine Frage gestellt habe. Siehe
+    uns an, wie schön es wir haben. Wir haben so viel miteinander erlebt es ist
+    einfach WOW. Es waren die schönsten 7 Monate jemals und es werden noch mehr.
+    Dein Lächeln, deine Augen, deine Umarmungen und deine Liebe machen mich
+    zu einem glücklicheren Menschen.<br><br>
+
+    In diesen 7 Monaten haben wir so viele wunderschöne Erinnerungen gesammelt.
+    Picknick, Schwimmen, Nap zusammen, Essen, Dates... alles mögliche baby!
+    Jeder Moment mit dir ist etwas ganz Wundervolles für mich und ich bin echt
+    dankbar dich an meiner Seite habe.<br><br>
+
+    Ich liebe dich von ganzem Herzen und freue mich auf alles weitere mit dir. ❤️
+  </div>
+
+  <a class="button"
+     href="https://open.spotify.com/playlist/5OUvXJYJ4GXHGSqd2pIojL?si=63NgTsNuSUGIu6IfqOzS-w&pt=cdf20abcaa756f522d73788f5e7ae7bc"
+     target="_blank">
+    🎵 Unsere Playlist
+  </a>
+
+  <button class="button" onclick="createHearts()">
+    💖 Ich liebe dich
+  </button>
+
+  <div class="footer">
+    Für immer dein Andi ❤️<br>
+    Andi ♾️ Amy
+  </div>
+</div>
+
+<script>
+  function createHearts() {
+    for (let i = 0; i < 35; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = '❤️';
+
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.top = (window.innerHeight - 50) + 'px';
+      heart.style.fontSize = (20 + Math.random() * 30) + 'px';
+      heart.style.animationDuration = (3 + Math.random() * 2) + 's';
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+  }
+
+  // Startdatum eurer Beziehung
+  const start = new Date("2025-10-20");
+
+  // Heutiges Datum holen
+  const heute = new Date();
+
+  // Datum schön formatiert (TT.MM.JJJJ)
+  const tag = heute.getDate().toString().padStart(2, "0");
+  const monat = (heute.getMonth() + 1).toString().padStart(2, "0");
+  const jahr = heute.getFullYear();
+
+  document.getElementById("heute").textContent = `${tag}.${monat}.${jahr}`;
+
+  // Monate berechnen
+  let diffJahre = heute.getFullYear() - start.getFullYear();
+  let diffMonate = heute.getMonth() - start.getMonth();
+  let diffTage = heute.getDate() - start.getDate();
+
+  let gesamtMonate = diffJahre * 12 + diffMonate;
+  if (diffTage < 0) gesamtMonate--;
+
+  document.getElementById("monate").textContent =
+    `${gesamtMonate} wunderschöne Monate voller Liebe ✨`;
+</script>
+
+<div class="love-text">
+<a class="button" href="counter.html" >⏳ Countdown</a>
+<!-- <a class="button" href="christentum.html">✝️ Christentum</a> -->
+<a class="button" href="bilder.html">📸 Unsere Bilder</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown bis zu unserem 1 Jahr ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7, #ff758c);
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    #countdown {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 20px;
+      background: rgba(255,255,255,0.15);
+      padding: 25px;
+      border-radius: 20px;
+      display: inline-block;
+      backdrop-filter: blur(10px);
+    }
+
+    a {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #fff;
+      color: #e91e63;
+      border-radius: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Countdown bis zu unserem 1‑jährigen Jubiläum ❤️</h1>
+
+<div id="countdown">Lädt...</div>
+
+<a href="index.html">⬅️ Zurück</a>
+
+<script>
+  const zielDatum = new Date("October 20, 2026 00:00:00").getTime();
+
+  function updateCountdown() {
+    const jetzt = new Date().getTime();
+    const diff = zielDatum - jetzt;
+
+    const tage = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const stunden = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minuten = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const sekunden = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      `{tage} Tage<br>{stunden} Stunden<br>{minuten} Minuten<br>{sekunden} Sekunden`;
+  }
+
+  setInterval(updateCountdown, 1000);
+</script>
+
+
+</script>
+
+</body>
+</html>
