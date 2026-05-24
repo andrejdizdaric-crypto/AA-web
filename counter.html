@@ -69,15 +69,14 @@
     const minuten = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const sekunden = Math.floor((diff % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML =
-      `{tage} Tage<br>{stunden} Stunden<br>{minuten} Minuten<br>{sekunden} Sekunden`;
+    document.getElementById("countdown").innerHTML = `${tage} Tage ${stunden} Stunden ${minuten} Minuten ${sekunden} Sekunden`;
   }
 
   setInterval(updateCountdown, 1000);
 </script>
 
 
-</script>
+
 
 </body>
 </html>
